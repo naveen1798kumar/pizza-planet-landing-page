@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
+import Logo from "../assets/pizzas_planet-logo.png"
 
 const Footer = () => {
   return (
@@ -7,7 +8,7 @@ const Footer = () => {
       <div className="flex items-center justify-between">
         {/* Logo */}
         <div className="flex items-center gap-2">
-          <img src="/logo.png" alt="Pizza Planet Logo" className="w-10 h-10" />
+          <img src={Logo} alt="Pizza Planet Logo" className="w-10 h-10" />
           <span className="text-xl font-bold text-yellow-700 font-heading">Pizza Planet</span>
         </div>
 
@@ -16,7 +17,7 @@ const Footer = () => {
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.6 }}
-          className="text-3xl sm:text-4xl font-extrabold text-yellow-700 underline decoration-yellow-500 text-center flex-1"
+          className="hidden md:block text-3xl sm:text-4xl font-extrabold text-yellow-700 underline decoration-yellow-500 text-center flex-1"
         >
           Pizza Planet
         </motion.h1>

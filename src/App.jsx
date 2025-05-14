@@ -3,6 +3,7 @@ import MenuCard from "./components/MenuCard";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import { motion } from "framer-motion";
+import Logo from "./assets/pizzas_planet-logo.png"
 
 import BgImg from "./assets/graphic-2d-colorful-wallpaper-with-grainy-gradients.jpg"
 
@@ -12,14 +13,22 @@ function App() {
       {/* Header */}
     {/* <Header/> */}
 
-    <motion.h1
-        initial={{ opacity: 0, scale: 0.95 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 0.6 }}
-        className="text-4xl sm:text-5xl font-bold text-yellow-700 text-center mb-16 underline decoration-yellow-500"
-      >
-        Pizza Planet
-      </motion.h1>
+<motion.h1
+  initial={{ opacity: 0, scale: 0.95 }}
+  animate={{ opacity: 1, scale: 1 }}
+  transition={{ duration: 0.6 }}
+  className="text-4xl sm:text-5xl font-bold text-[#22763A] text-center mb-16 underline decoration-yellow-500 flex flex-col items-center gap-4"
+>
+  <span>
+    <img
+      src={Logo}
+      alt="Pizza Planet Logo"
+      className="w-24 sm:w-32 h-auto mx-auto"
+    />
+  </span>
+  Pizza Planet
+</motion.h1>
+
       
 
       {/* 🍕 Pizza Section */}
