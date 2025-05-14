@@ -36,12 +36,12 @@ export const pizzaData = [
         items: [
           { name: "Classic Margherita", price: { small: 99, medium: 200 } },
           { name: "Corn Cheese Pizza", price: { small: 120, medium: 250 } },
-          { name: "Veggie Pizza", price: { small: 130, medium: 260 } },
-          { name: "Mushroom Pizza", price: { small: 140, medium: 270 } },
-          { name: "Spicy Paneer Pizza", price: { small: 150, medium: 280 } },
-          { name: "Red Paaprrika Paneer Pizza", price: { small: 160, medium: 290 } },
-          { name: "Hot and Spicy Pizza", price: { small: 170, medium: 300 } },
-          { name: "Veg Loaded Pizza", price: { small: 180, medium: 310 } },
+          { name: "Veggie Pizza", price: { small: 120, medium: 250 } },
+          { name: "Mushroom Pizza", price: { small: 150, medium: 280 } },
+          { name: "Spicy Paneer Pizza", price: { small: 180, medium: 330 } },
+          { name: "Red Paprika Paneer Pizza", price: { small: 190, medium: 330 } },
+          { name: "Hot and Spicy Pizza", price: { small: 190, medium: 340 } },
+          { name: "Veg Loaded Pizza", price: { small: 200, medium: 340 } },
         ]
       },
       {
@@ -55,8 +55,6 @@ export const pizzaData = [
           { name: "Non Veg Loaded Pizza", price: { small: 269, medium: 449 } },
           { name: "Chicken Sausage Pizza", price: { small: 150, medium: 280 } },
           { name: "Schezwan Chicken Pizza", price: { small: 220, medium: 380 } },
-          { name: "Chicken Golden Delight", price: { small: 190, medium: 320 } },
-          { name: "Barbeque Chicken", price: { small: 200, medium: 330 } }
         ]
       }
     ],
@@ -111,7 +109,7 @@ export const menuData = [
     items: [
       { name: "Bread Omelete", price: 50 },
       { name: "Cheese Bread Omelete", price: 70 },
-      { name: "Pasta in Pink Sauce", price: 109 }
+      // { name: "Pasta in Pink Sauce", price: 109 }
     ]
   },
   {
@@ -131,10 +129,10 @@ export const hotItemsData = [
     category: "Starters",
     image: Starters,
     items: [
-      { name: "Smileys", price: 70 },
-      { name: "Veg Spring Roll", price: 80 },
-      { name: "Chicken Spring Roll", price: 80 },
-      { name: "Chicken Nuggets", price: 90 },
+      { name: "Smileys (5 pcs)", price: 70 },
+      { name: "Veg Spring Roll (3 pcs)", price: 80 },
+      { name: "Chicken Spring Roll (2 pcs)", price: 80 },
+      { name: "Chicken Nuggets (5 pcs)", price: 90 },
       { name: "Chicken Popcorn", price: 100 }
     ]
   },
@@ -180,7 +178,7 @@ export const hotItemsData = [
     image: HotDogs,
     items: [
       { name: "Chicken Hot Dog", price: 139 },
-      { name: "Cheese Chicken Hot Dog", price: 159 }
+      { name: "Chicken Cheese Hot Dog", price: 159 }
     ]
   },
   {
@@ -227,11 +225,11 @@ export const coldItemsData = [
     category: "Ice Cream Bowl",
     image: IceCreamBowl,
     items: [
-      { name: "Vanilla Ice Cream", price: 60 },
-      { name: "Strawberry Ice Cream", price: 60 },
-      { name: "Chocolate Ice Cream", price: 70 },
-      { name: "Pista Ice Cream", price: 70 },
-      { name: "Mango Ice Cream", price: 70 },
+      { name: "Vanilla", price: 60 },
+      { name: "Strawberry", price: 60 },
+      { name: "Chocolate", price: 70 },
+      { name: "Pista", price: 70 },
+      { name: "Mango", price: 70 },
       { name: "Butter Scotch", price: 80 },
       { name: "Butter Current", price: 90 }
     ]
@@ -269,9 +267,9 @@ export const coldItemsData = [
       { name: "Strawberry Lassi", price: 70 },
       { name: "Pista Lassi", price: 70 },
       { name: "Mango Lassi", price: 80 },
+      { name: "Chocolate", price: 90 },
       { name: "Butter Scotch Lassi", price: 80 },
-      { name: "Black Current Lassi", price: 100 },
-      { name: "Chocolate", price: 90 }
+      { name: "Black Current Lassi", price: 100 }
     ]
   }
 ];

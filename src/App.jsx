@@ -67,7 +67,7 @@ function App() {
   <span className="absolute left-10 -bottom-1 transform -translate-x-1/2 w-1/2 h-1 bg-red-500 rounded-full"></span>
 </motion.h2>
       </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 gap-y-12">
           {[...hotItemsData, ...menuData].map((menu, index) => (
             <MenuCard key={index} {...menu} />
           ))}
@@ -88,7 +88,7 @@ function App() {
   <span className="absolute left-10 -bottom-1 transform -translate-x-1/2 w-1/2 h-1 bg-red-500 rounded-full"></span>
 </motion.h2>
       </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 gap-y-12">
           {coldItemsData.map((item, index) => (
             <MenuCard key={index} {...item} />
           ))}

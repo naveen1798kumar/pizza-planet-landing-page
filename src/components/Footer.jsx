@@ -27,12 +27,12 @@ const Footer = () => {
           <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
             <FaFacebookF className="hover:text-yellow-900 transition" />
           </a>
-          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.instagram.com/pizzasplanet25?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer">
             <FaInstagram className="hover:text-yellow-900 transition" />
           </a>
-          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+          {/* <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
             <FaTwitter className="hover:text-yellow-900 transition" />
-          </a>
+          </a> */}
         </div>
       </div>
     </footer>

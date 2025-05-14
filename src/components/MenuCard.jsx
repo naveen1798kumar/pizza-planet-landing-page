@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 
 const MenuCard = ({ category, image, items, itemTypes }) => {
   const isPizza = category === "Pizza";
+  const isWaffle = category === "Waffles"
 
   return (
 <motion.div
@@ -19,6 +20,15 @@ const MenuCard = ({ category, image, items, itemTypes }) => {
 
       {/* Overlay */}
       <div className="absolute inset-0 bg-black/50" />
+{isWaffle && (
+  <div className="absolute top-2 right-2 bg-red-600/90 text-sm text-gray-200 px-3 py-1 rounded-md shadow-md italic backdrop-blur-sm">
+    Extra Ice Cream{' '}
+    <span className="font-semibold">
+      <span className="text-yellow-500 px-1">₹</span>30
+    </span>
+  </div>
+)}
+
 
       {/* Content */}
       <div className="relative p-6 pb-12 font-sans">
