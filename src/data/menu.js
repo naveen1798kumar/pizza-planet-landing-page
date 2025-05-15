@@ -4,7 +4,7 @@ import Pizza from "../assets/pizza.jpg"
 // 
 import Waffles from "../assets/waffles.jpg"
 import VadaPav from "../assets/vada-pav.jpg"
-import Maggi from "../assets/Maggi.jpg"
+import Maggi from "../assets/maggi.jpg"
 import Fries from "../assets/fries.jpg"
 import Omelette from "../assets/omelette.jpg"
 
