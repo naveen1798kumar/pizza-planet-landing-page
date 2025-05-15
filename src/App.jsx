@@ -10,7 +10,7 @@ import Toppings from "./assets/toppings.jpg"
 
 function App() {
   return (
-    <div className="bg-yellow-100 min-h-screen py-10 px-6 sm:px-10 text-gray-800 backdrop-blur-lg" style={{ backgroundImage: `url(${BgImg})`, backgroundAttachment: "fixed" }}>
+    <div className="bg-yellow-100 min-h-screen py-10 px-0 sm:px-8 md:px-12 text-gray-800 backdrop-blur-lg" style={{ backgroundImage: `url(${BgImg})`, backgroundAttachment: "fixed" }}>
       {/* Header */}
     {/* <Header/> */}
 
@@ -47,7 +47,7 @@ function App() {
 </motion.h2>
       </div>
       
-<section className="px-4 py-8">
+<section className="px-2 py-8">
   <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
     {/* Two columns for MenuCards */}
     <div className="lg:col-span-2 grid grid-cols-1 sm:grid-cols-2 gap-8">
@@ -120,7 +120,7 @@ function App() {
   <span className="absolute left-10 -bottom-1 transform -translate-x-1/2 w-1/2 h-1 bg-red-500 rounded-full"></span>
 </motion.h2>
       </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 gap-y-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 gap-y-12 px-2">
           {[...hotItemsData, ...menuData].map((menu, index) => (
             <MenuCard key={index} {...menu} />
           ))}
@@ -141,7 +141,7 @@ function App() {
           <span className="absolute left-10 -bottom-1 transform -translate-x-1/2 w-1/2 h-1 bg-red-500 rounded-full"></span>
         </motion.h2>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 gap-y-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 gap-y-12 px-2">
           {coldItemsData.map((item, index) => (
             <MenuCard key={index} {...item} />
           ))}

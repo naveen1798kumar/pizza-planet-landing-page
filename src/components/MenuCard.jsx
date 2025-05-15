@@ -32,7 +32,7 @@ const MenuCard = ({ category, image, items, itemTypes, toppings }) => {
 
 
       {/* Content */}
-      <div className="relative p-6 pb-12 font-sans">
+      <div className="relative p-4 lg:p-8 pb-12 font-sans">
         {/* Category Title */}
         {!itemTypes && (
   <div className="relative mb-10 text-center">
@@ -69,7 +69,7 @@ const MenuCard = ({ category, image, items, itemTypes, toppings }) => {
               {itemTypes.map((typeBlock, idx) => (
                 <div key={idx} className="flex-1  md:mb-0">
                   <div className="flex justify-between items-center mb-4">
-                    <h3 className="text-4xl font-bold tracking-wide text-yellow-400">
+                    <h3 className="text-2xl md:text-4xl font-bold tracking-wide text-yellow-400">
                       {typeBlock.type}
                     </h3>
                     <span className="text-sm text-gray-300 italic">Small / Medium</span>
@@ -81,7 +81,7 @@ const MenuCard = ({ category, image, items, itemTypes, toppings }) => {
                         className="flex justify-between border-b border-dashed border-red-400/40 pb-2"
                       >
                         <span className="font-medium tracking-tight text-xl italic">{item.name}</span>
-                        <span className="font-semibold text-white">
+                        <span className="font-semibold text-white ">
                           <span className="text-yellow-400 px-1">₹</span>{item.price.small} /
                           <span className="text-yellow-400 px-1">₹</span>{item.price.medium}
                         </span>

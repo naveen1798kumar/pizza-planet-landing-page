@@ -4,7 +4,7 @@ import Logo from "../assets/pizzas_planet-logo.png";
 
 const Footer = () => {
   return (
-    <footer className="bg-yellow-100 text-yellow-900 py-10 px-6 sm:px-12 mt-20 shadow-inner">
+    <footer className="bg-yellow-100 text-yellow-900 py-10 px-6 sm:px-12 mt-20 shadow-inner rounded-b-4xl rounded-t-xl">
       <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
 
         {/* Brand & Description */}
