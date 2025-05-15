@@ -4,13 +4,14 @@ import Pizza from "../assets/pizza.jpg"
 // 
 import Waffles from "../assets/waffles.jpg"
 import VadaPav from "../assets/vada-pav.jpg"
-import Maggie from "../assets/maggie.jpg"
+import Maggi from "../assets/Maggi.jpg"
 import Fries from "../assets/fries.jpg"
 import Omelette from "../assets/omelette.jpg"
 
 // 
 import Starters from "../assets/starters.jpg"
 import Burgers from "../assets/burgers.jpg"
+import FriedChicken from "../assets/fried-chicken.jpg"
 import Momos from "../assets/momos.jpg"
 import Warps from "../assets/wraps.jpg"
 import HotDogs from "../assets/hot-dogs.jpg"
@@ -47,14 +48,15 @@ export const pizzaData = [
       {
         type: "Non Veg Pizza",
         items: [
-          { name: "Peri Peri Chicken Pizza", price: { small: 220, medium: 380 } },
+          { name: "Chicken Sausage Pizza", price: { small: 150, medium: 280 } },
           { name: "Corn and Peri Peri Chicken Pizza", price: { small: 190, medium: 350 } },
+          { name: "Schezwan Chicken Pizza", price: { small: 220, medium: 380 } },
           { name: "BBQ Chicken Pizza", price: { small: 220, medium: 380 } },
+          { name: "Peri Peri Chicken Pizza", price: { small: 220, medium: 380 } },
           { name: "Tandoori Chicken Pizza", price: { small: 240, medium: 410 } },
           { name: "Spicy Chicken Pizza", price: { small: 240, medium: 410 } },
           { name: "Non Veg Loaded Pizza", price: { small: 269, medium: 449 } },
-          { name: "Chicken Sausage Pizza", price: { small: 150, medium: 280 } },
-          { name: "Schezwan Chicken Pizza", price: { small: 220, medium: 380 } },
+          
         ]
       }
     ],
@@ -91,16 +93,16 @@ export const menuData = [
     ]
   },
   {
-    category: "Maggie",
-    image: Maggie,
+    category: "Maggi",
+    image: Maggi,
     items: [
-      { name: "Veg Maggie", price: 50 },
-      { name: "Cheese Maggie", price: 70 },
-      { name: "Egg Maggie", price: 60 },
-      { name: "Peri Peri Paneer Maggie", price: 90 },
-      { name: "Cheese Paneer Maggie", price: 110 },
-      { name: "Chicken Maggie", price: 100 },
-      { name: "Chicken Cheese Maggie", price: 120 }
+      { name: "Veg Maggi", price: 50 },
+      { name: "Cheese Maggi", price: 70 },
+      { name: "Egg Maggi", price: 60 },
+      { name: "Peri Peri Paneer Maggi", price: 90 },
+      { name: "Cheese Paneer Maggi", price: 110 },
+      { name: "Chicken Maggi", price: 100 },
+      { name: "Chicken Cheese Maggi", price: 120 }
     ]
   },
   {
@@ -129,10 +131,10 @@ export const hotItemsData = [
     category: "Starters",
     image: Starters,
     items: [
-      { name: "Smileys (5 pcs)", price: 70 },
-      { name: "Veg Spring Roll (3 pcs)", price: 80 },
-      { name: "Chicken Spring Roll (2 pcs)", price: 80 },
-      { name: "Chicken Nuggets (5 pcs)", price: 90 },
+      { name: "Smileys", qty: 5 , price: 70 },
+      { name: "Veg Spring Roll", qty: 3 , price: 80 },
+      { name: "Chicken Spring Roll", qty: 2 , price: 80 },
+      { name: "Chicken Nuggets", qty: 5 , price: 90 },
       { name: "Chicken Popcorn", price: 100 }
     ]
   },
@@ -140,9 +142,9 @@ export const hotItemsData = [
     category: "Burgers",
     image: Burgers,
     items: [
-      { name: "veg Burger", price: 80 },
+      { name: "Veg Burger", price: 80 },
       { name: "Paneer Burger", price: 130 },
-      { name: "Chicken Burst Burger", price: 140 },
+      { name: "Cheese Burst Burger", price: 140 },
       { name: "Classic Chicken Burger", price: 100 },
       { name: "Egg Burger", price: 80 },
       { name: "Chicken Cheese Burger", price: 120 },
@@ -152,14 +154,26 @@ export const hotItemsData = [
     ]
   },
   {
+    category: "Fried Chicken",
+    image: FriedChicken,
+    items: [
+      { name: "Fried chicken", qty: 1 , price: 90 },
+      { name: "Fried chicken", qty: 2 , price: 160 },
+      { name: "Hot & Crispy Lollypop", qty: 4 , price: 139 },
+      { name: "Hot & Crispy Wings", qty: 4 , price: 129 },
+      { name: "Hot & Crispy Chicken Bucket", offer : "lollypop 4pcs + wings 4pcs + strip 4pcs", price: 369 },
+      
+    ]
+  },
+  {
     category: "Momos",
     image: Momos,
     items: [
-      { name: "veg Momos", price: 90 },
-      { name: "Paneer Momos", price: 120 },
-      { name: "Chicken Momos", price: 100 },
-      { name: "Corn and Cheese Momos", price: 110 },
-      { name: "Peri Peri Chicken Momos", price: 120 }
+      { name: "Veg Momos", qty: 5 , price: 90 },
+      { name: "Paneer Momos", qty: 5 , price: 120 },
+      { name: "Chicken Momos", qty: 5 , price: 100 },
+      { name: "Corn and Cheese Momos", qty: 5 , price: 110 },
+      { name: "Peri Peri Chicken Momos", qty: 5 , price: 120 }
     ]
   },
   {
@@ -231,7 +245,7 @@ export const coldItemsData = [
       { name: "Pista", price: 70 },
       { name: "Mango", price: 70 },
       { name: "Butter Scotch", price: 80 },
-      { name: "Butter Current", price: 90 }
+      { name: "Black Current", price: 90 }
     ]
   },
   {

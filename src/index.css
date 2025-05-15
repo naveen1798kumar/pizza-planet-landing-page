@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Carattere&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Hurricane&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ultra&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mr+Dafoe&family=Ultra&display=swap');
 
 
 @import "tailwindcss";
@@ -16,6 +17,10 @@ h2{
 }
 h3{
     font-family: "Hurricane", cursive;
+}
+
+.themeFont{
+    font-family: "Mr Dafoe", cursive;
 }
 
 :root {
