@@ -150,7 +150,7 @@ export const hotItemsData = [
       { name: "Chicken Cheese Burger", price: 120 },
       { name: "Fried Chicken Burger", price: 149 },
       { name: "Peri Peri Fried Chicken Burger", price: 159 },
-      { name: "Tandoorio Fried Chicken Burger", price: 159 }
+      { name: "Tandoori Fried Chicken Burger", price: 159 }
     ]
   },
   {
@@ -161,7 +161,14 @@ export const hotItemsData = [
       { name: "Fried chicken", qty: 2 , price: 160 },
       { name: "Hot & Crispy Lollypop", qty: 4 , price: 139 },
       { name: "Hot & Crispy Wings", qty: 4 , price: 129 },
+      { name: "Hot & Crispy Strips", qty: 6 , price: 260 },
       { name: "Hot & Crispy Chicken Bucket", offer : "lollypop 4pcs + wings 4pcs + strip 4pcs", price: 369 },
+      { name: "Chicken Wings Bucket", qty: 10 , price: 289 },
+      { name: "Fried Chicken", qty: 4 , price: 300 },
+      { name: "Chicken Lollypop Bucket", qty: 10 , price: 309 },
+      { name: "Fried Chicken", qty: 6 , price: 469 },
+      { name: "Fried Chicken", qty: 8 , price: 599 },
+
       
     ]
   },
@@ -177,7 +184,7 @@ export const hotItemsData = [
     ]
   },
   {
-    category: "Warps",
+    category: "Wraps",
     image: Warps,
     items: [
       { name: "Grilled Veg Wrap", price: 99 },

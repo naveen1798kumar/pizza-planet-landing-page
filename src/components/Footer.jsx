@@ -11,10 +11,10 @@ const Footer = () => {
         <div>
           <div className="flex items-center gap-3 mb-3">
             <img src={Logo} alt="Pizza Planet Logo" className="w-10 h-10" />
-            <span className="text-xl font-bold text-yellow-800 font-heading">Pizza Planet</span>
+            <span className="text-3xl font-bold text-[#22763A] font-heading logo">Pizzas Planet</span>
           </div>
           <p className="relative text-4xl text-red-700 my-8 themeFont inline-block">
-            Crafting Pizza with <br /> Passion and Love !
+            Slice into Happiness !
             <span className="absolute bg-amber-500 -bottom-2 left-0 h-1 w-1/2"></span>
           </p>
         </div>
@@ -25,9 +25,10 @@ const Footer = () => {
             initial={{ opacity: 0, y: 10 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="text-lg font-semibold text-yellow-800"
+            className="relative text-lg font-bold text-[#22763A] inline-block"
           >
             Contact Us
+          <span className="absolute bg-amber-500 -bottom-2 left-0 h-1 w-1/2"></span>
           </motion.h3>
           <p className="flex items-start gap-2 text-sm">
             <FaMapMarkerAlt className="text-yellow-700 mt-2" />
@@ -65,7 +66,7 @@ const Footer = () => {
 
       {/* Footer Bottom */}
       <div className="text-center text-xs text-yellow-800 mt-10 border-t border-yellow-300 pt-4">
-        &copy; {new Date().getFullYear()} Pizza Planet. Crafted with 🍕 & ❤️ in India. <br />
+        &copy; {new Date().getFullYear()} Pizzas Planet. Crafted with 🍕 & ❤️ in India. <br />
         <span className="text-yellow-600">Made by <a href="https://cybersocsolutions.com/" target="_blank" rel="noopener noreferrer"><strong>Cybersoc Solutions Pvt. LTD</strong></a></span>
       </div>
     </footer>

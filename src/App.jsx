@@ -35,7 +35,7 @@ function App() {
       {/* 🍕 Pizza Section */}
       <section className="my-20">
       <div className="text-center">
-      <motion.h2
+      {/* <motion.h2
   initial={{ opacity: 0, y: -30, rotate: -2 }}
   whileInView={{ opacity: 1, y: 0, rotate: 0 }}
   transition={{ duration: 0.6, ease: "easeOut" }}
@@ -44,7 +44,7 @@ function App() {
 >
   Pizza Section
   <span className="absolute left-10 -bottom-1 transform -translate-x-1/2 w-1/2 h-1 bg-red-500 rounded-full"></span>
-</motion.h2>
+</motion.h2> */}
       </div>
       
 <section className="px-2 py-8">
@@ -59,7 +59,7 @@ function App() {
     {/* Third column for Toppings */}
     {pizzaData[0].toppings && pizzaData[0].toppings.length > 0 && (
   <div
-    className="group relative mt-2 rounded-2xl shadow-2xl overflow-hidden bg-cover bg-center cursor-pointer p-6 h-[360px] flex flex-col justify-between transition-all duration-300 hover:scale-[1.015]"
+    className="group relative mt-2 w-[80%] lg:w-full rounded-2xl shadow-2xl overflow-hidden bg-cover bg-center cursor-pointer p-6 h-[360px] flex flex-col justify-between transition-all duration-300 hover:scale-[1.015]"
     style={{ backgroundImage: `url(${Toppings})` }}
   >
     {/* Overlay */}
@@ -77,12 +77,12 @@ function App() {
         </div>
       </div>
 
-      <div className="overflow-y-auto pr-2 custom-scrollbar">
+      <div className="overflow-y-auto pr-2  custom-scrollbar">
         <ul className="space-y-3 text-base text-white/90">
           {pizzaData[0].toppings.map((topping, index) => (
             <li
               key={index}
-              className="flex justify-between border-b border-dashed border-green-400/40 pb-2"
+              className="flex justify-between border-b border-dashed  border-green-400/40 pb-2"
             >
               <span className="font-medium tracking-tight text-lg italic">
                 {topping.name}
@@ -109,7 +109,7 @@ function App() {
       {/* 🍔 Hot & Other Items */}
       <section className="mb-20">
       <div className="text-center">
-      <motion.h2
+      {/* <motion.h2
   initial={{ opacity: 0, y: -30, rotate: -2 }}
   whileInView={{ opacity: 1, y: 0, rotate: 0 }}
   transition={{ duration: 0.6, ease: "easeOut" }}
@@ -118,7 +118,7 @@ function App() {
 >
   Hot and Chats
   <span className="absolute left-10 -bottom-1 transform -translate-x-1/2 w-1/2 h-1 bg-red-500 rounded-full"></span>
-</motion.h2>
+</motion.h2> */}
       </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 gap-y-12 px-2">
           {[...hotItemsData, ...menuData].map((menu, index) => (
@@ -130,7 +130,7 @@ function App() {
       {/* ❄️ Cold Items – Each as a Separate Section */}
       <section>
         <div className="text-center">
-        <motion.h2
+        {/* <motion.h2
         initial={{ opacity: 0, y: -30, rotate: -2 }}
         whileInView={{ opacity: 1, y: 0, rotate: 0 }}
         transition={{ duration: 0.6, ease: "easeOut" }}
@@ -139,7 +139,7 @@ function App() {
         >
           Cold Items
           <span className="absolute left-10 -bottom-1 transform -translate-x-1/2 w-1/2 h-1 bg-red-500 rounded-full"></span>
-        </motion.h2>
+        </motion.h2> */}
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 gap-y-12 px-2">
           {coldItemsData.map((item, index) => (

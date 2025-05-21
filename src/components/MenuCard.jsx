@@ -50,10 +50,10 @@ const MenuCard = ({ category, image, items, itemTypes, toppings }) => {
             {items.map((item, index) => (
               <li
                 key={index}
-                className="flex justify-between border-b border-dashed border-red-400/40 pb-2"
+                className="flex justify-between  border-red-400/40 pb-2"
               >
                 <span className="font-medium tracking-wide text-xl italic">{item.name} 
-                  {item.qty ? <span className="bg-gray-50/60 text-black px-2 py-1 rounded-xl">( <span className="">{item.qty}</span> pcs )</span> : null} 
+                  {item.qty ? <span className="bg-gray-50/60 text-black px-2 py-1 rounded-xl ml-2">( <span className="">{item.qty}</span> pcs )</span> : null} 
                   {item.offer ? <div className="mt-2 bg-gray-50/60 text-black px-2 py-1 rounded-xl">( {item.offer} )</div> : null}
                 </span>
                 <span className="font-semibold"><span className="text-yellow-400 px-1">₹</span>{item.price}</span>
@@ -78,7 +78,7 @@ const MenuCard = ({ category, image, items, itemTypes, toppings }) => {
                     {typeBlock.items.map((item, index) => (
                       <li
                         key={index}
-                        className="flex justify-between border-b border-dashed border-red-400/40 pb-2"
+                        className="flex justify-between border-red-400/40 pb-2"
                       >
                         <span className="font-medium tracking-tight text-xl italic">{item.name}</span>
                         <span className="font-semibold text-white ">
